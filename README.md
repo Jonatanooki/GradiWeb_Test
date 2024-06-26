@@ -113,7 +113,7 @@ Al momento de renderizar uso un **InnerHTML** para que se evidencie de una forma
 
 ### Estilos
 
-Para los estilos no use SASS debido que no se como usarlo, asi que utilicé solamente CSS, Puse dos montañas en la parte inferior y una nube con animación en la parte superior.
+Para los estilos utilicé CSS, Puse dos montañas en la parte inferior y una nube con animación en la parte superior.
 
 <p align="center">
   <img alt="Diseño Web Responsive" src="Prueba de GradiWeb/images/Overview.png">
