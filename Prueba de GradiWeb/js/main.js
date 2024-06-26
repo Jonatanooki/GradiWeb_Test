@@ -2,22 +2,24 @@ document.addEventListener('DOMContentLoaded', () => {
     const prevButton = document.getElementById('prev');
     const nextButton = document.getElementById('next');
     const productContainer = document.getElementById('product-container');
+    const API_URL = 'https://gradistore-spi.herokuapp.com';
+
     let products = new Product();
     let lstProducts = Array(products);
     let currentIndex = 0;
 
     async function fetchProducts() {
-        try {
-            const API_URL = 'https://gradistore-spi.herokuapp.com/products/all';
-            const response = await globalThis.fetch(API_URL);
-            const data = await response.json();
-            lstProducts = data.products.nodes;
+        try {           
+            const api = consumeAPI(API_URL);
+            const list = await api.products("all");
+            lstProducts = list.products.nodes;
             renderProducts();
             updateButtons();
         } catch (error) {
             console.error('Error fetching products:', error);
         }
     }
+
 
     function renderProducts() {
         productContainer.innerHTML = '';
