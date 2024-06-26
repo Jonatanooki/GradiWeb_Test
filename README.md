@@ -104,7 +104,7 @@ Ya con el puntaje se realiza el calculo del conteo del número de estrellas:
 
 En caso de que el puntaje llegase a superar los 500 puntos (como no tengo un muestreo de datos que indique que hayan datos mayores a 500) se asegura de que si el **"# de estrellas"** es mayor a 5 deje como máximo 5 estrellas.
 
-Al momento de renderizar uso un **InnerHTML** para que se evidencie de una forma mas clara la tarjeta de cada producto.
+Al momento de renderizar uso un **InnerHTML** para que se evidencie de una forma mas clara el armado de la tarjeta de cada producto.
 
 <p align="center">
   <img alt="Card Render" src="Prueba de GradiWeb/images/renderCard.png">
@@ -113,7 +113,9 @@ Al momento de renderizar uso un **InnerHTML** para que se evidencie de una forma
 
 ### Estilos
 
-Para los estilos no use SASS debido que no se como usarlo, asi que utilicé solamente CSS.
+Para los estilos no use SASS debido que no se como usarlo, asi que utilicé solamente CSS, Puse dos montañas en la parte inferior y una nube con animación en la parte superior.
+
+
 
 En cuanto al comprtamiento responsive se tomaron en cuenta los siguientes tamaños de pantalla:
 
