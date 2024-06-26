@@ -66,7 +66,7 @@ Se obtiene la respuesta de la lista de los productos:
 ```
 
 > [!NOTE]
-> Se muestra solo un producto ya que la respuesta es demasiado larga.
+> Se muestra solo un producto ya que la respuesta contiene mas productos.
 
 En esta respuesta se observa que tenemos todos los datos necesarios para crear el reel de productos, pero para la puntuación (Estrellas '⭐') necesitamos leer todos las puntuaciones de la propiedad "tags" (valores numericos) para sacar el puntaje, pero si hay mas de una valoración se debe de sacar el promedio de estos.
 
@@ -86,6 +86,44 @@ Para el newsletter solo debes validar que el dato ingresado sea un correo electr
 ### Hablando de código... 💻
 
 - **✍️ Lenguaje/tecnología...** todo esto fue desarrollado en **javascript** por medio del IDE **Visual Studio Code** usando [Vanilla JS](http://vanilla-js.com/) y con la ayuda de la inteligencia artificial **CHAT GPT**.
+
+Para consumir la API se utiliza un proxy el cual se encuentra en el archivo de [utils.js](<Prueba de GradiWeb/js/utils.js>).
+
+ya con los datos obtenidos y mapeados en la clase de [products.js](<Prueba de GradiWeb/DTO/product.js>) procedemos a usar los datos necesarios y a recorrer la propiedad de "tags" para el calculo del puntaje.
+
+
+```math
+Puntaje total = \frac{Sumatoria de puntajes}{Cantidad de puntajes por producto}
+```
+
+Ya con el puntaje se realiza el calculo del conteo del número de estrellas:
+
+```math
+# de estrellas = \frac{Puntaje total}{100}
+```
+
+En caso de que el puntaje llegase a superar los 500 puntos (como no tengo un muestreo de datos que indique que hayan datos mayores a 500) se asegura de que si el **"# de estrellas"** es mayor a 5 deje como máximo 5 estrellas.
+
+Al momento de renderizar uso un **InnerHTML** para que se evidencie de una forma mas clara la tarjeta de cada producto.
+
+<p align="center">
+  <img alt="Card Render" src="Prueba de GradiWeb/images/renderCard.png">
+</p>
+
+
+### Estilos
+
+Para los estilos no use SASS debido que no se como usarlo, asi que utilicé solamente CSS.
+
+En cuanto al comprtamiento responsive se tomaron en cuenta los siguientes tamaños de pantalla:
+
+```
+    @media (max-width: 1200px)
+    @media (min-width: 800px)
+    @media (min-width: 320px) and (max-width: 768px)
+    @media (min-width: 300px) and (max-width: 768px)        
+```
+
 
 
 
