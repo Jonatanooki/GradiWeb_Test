@@ -93,13 +93,13 @@ ya con los datos obtenidos y mapeados en la clase de [products.js](<Prueba de Gr
 
 
 ```math
-Puntaje total = \frac{<span>Sumatoria&nbsp;de puntajes</span>}{<span>Cantidad de puntajes por producto</span>}
+\text{Puntaje total} = \frac{\text{Sumatoria de puntajes}}{\text{Cantidad de puntajes por producto}}
 ```
 
 Ya con el puntaje se realiza el calculo del conteo del número de estrellas:
 
 ```math
-No de estrellas = \frac{\`$ Puntaje total\`$ }{100}
+\text{No de estrellas} = \frac\text{Puntaje total}{100}
 ```
 
 En caso de que el puntaje llegase a superar los 500 puntos (como no tengo un muestreo de datos que indique que hayan datos mayores a 500) se asegura de que si el **"# de estrellas"** es mayor a 5 deje como máximo 5 estrellas.
@@ -120,7 +120,7 @@ En cuanto al comprtamiento responsive se tomaron en cuenta los siguientes tamañ
 ```
     @media (max-width: 1200px)
     @media (min-width: 800px)
-    @media (min-width: 320px) and (max-width: 768px)
+    @media (min-width: 320px) and (max-width: 768px) and (orientation: landscape)
     @media (min-width: 300px) and (max-width: 768px)        
 ```
 
