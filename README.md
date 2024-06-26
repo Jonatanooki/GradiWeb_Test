@@ -115,7 +115,9 @@ Al momento de renderizar uso un **InnerHTML** para que se evidencie de una forma
 
 Para los estilos no use SASS debido que no se como usarlo, asi que utilicé solamente CSS, Puse dos montañas en la parte inferior y una nube con animación en la parte superior.
 
-
+<p align="center">
+  <img alt="Diseño Web Responsive" src="Prueba de GradiWeb/images/Overview.png">
+</p>
 
 En cuanto al comprtamiento responsive se tomaron en cuenta los siguientes tamaños de pantalla:
 
@@ -125,6 +127,14 @@ En cuanto al comprtamiento responsive se tomaron en cuenta los siguientes tamañ
     @media (min-width: 320px) and (max-width: 768px) and (orientation: landscape)
     @media (min-width: 300px) and (max-width: 768px)        
 ```
+
+<p align="center">
+  <img alt="Diseño Web Responsive" src="Prueba de GradiWeb/images/Responsive_superior.png">
+</p>
+
+<p align="center">
+  <img alt="Diseño Web Responsive" src="Prueba de GradiWeb/images/Responsive_inferior.png">
+</p>
 
 
 
