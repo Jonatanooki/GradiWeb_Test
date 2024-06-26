@@ -1,0 +1,344 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 200vh;
+}
+
+header {
+    background-color: #CAF0FF;
+    color: #333;
+    padding: 1px;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+}
+
+main {
+    padding: 1rem;
+}
+
+.product-title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    margin-left: 5rem;
+    display: block;
+    font-size: x-large;
+}
+
+.product-slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.product-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.product {
+    min-width: 300px;
+    margin: 0 1rem;
+    padding: 1rem;   
+    text-align: left; 
+}
+
+.product .product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 100px; 
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+button#prev {
+    left: 10px;
+    position: absolute;
+}
+
+button#next {
+    right: 10px;
+    position: absolute;
+}
+
+button:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+}
+
+.newsletter {
+    margin-top: 2rem;
+    text-align: center;
+    z-index: 0;
+    position: relative;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: larger;
+}
+
+.newsletter h2 {
+    font-size: medium;
+    color: #5f5d5d;
+}
+
+.newsletter input {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    width: 80%;
+    max-width: 400px;
+    border: 2px solid #75b3cb;
+    border-radius: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.newsletter button {
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    background-color: #75b3cb;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.a-price {
+    text-decoration: none;
+    position: relative;
+    line-height: normal;
+    color: #929696;
+}
+
+
+.mountain1 {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background-color: #4682B4;
+    clip-path: polygon(17% 40%, 0 100%, 41% 100%);
+   
+}
+
+.mountain2 {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background-color: #7EB9E4;
+    clip-path: polygon(80% 33%, 37% 100%, 100% 100%);
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+}
+
+.content h1 {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*---------Media----------*/
+
+
+@media (max-width: 1200px){ 
+    .product-title {
+        position: relative;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        margin-bottom: 2rem;
+        margin-left: 5rem;
+        display: block;
+        font-size: medium;
+    }   
+
+}
+
+
+@media (min-width: 800px){ 
+    .product-title {
+        position: relative;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        margin-bottom: 2rem;
+        margin-left: 5rem;
+        display: block;
+        font-size: medium;
+    }    
+}
+
+
+@media (min-width: 320px) and (max-width: 768px) and (orientation: landscape) { 
+    .product-title {
+        position: relative;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        margin-bottom: 2rem;
+        margin-left: 5rem;
+        display: block;
+        font-size: medium;
+    }   
+
+}
+
+
+@media (min-width: 300px) and (max-width: 768px) { 
+    .product-title {
+        position: relative;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        margin-bottom: 2rem;
+        margin-left: 5rem;
+        display: block;
+        font-size: small;
+    }
+   
+    .product {
+        min-width: 200px;
+        margin: 0 1rem;
+        padding: 1rem;   
+        text-align: left; 
+    }
+}
+
+
+/*---------Clouds--------*/
+
+
+#clouds{
+	background: #45a2e9;
+	background: -webkit-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+	background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);
+	background: -moz-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+}
+
+/*Time to finalise the cloud shape*/
+.cloud {
+	width: 200px; height: 60px;
+	background: #45a2e9;
+	
+	border-radius: 200px;
+	-moz-border-radius: 200px;
+	-webkit-border-radius: 200px;
+	
+	position: fixed; 
+}
+
+.cloud:before, .cloud:after {
+	content: '';
+	position: absolute; 
+	background: #45a2e9;
+	width: 100px; height: 80px;
+	position: fixed; top: -15px; left: 10px;
+	
+	border-radius: 100px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	
+	-webkit-transform: rotate(30deg);
+	transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+}
+
+.cloud:after {
+	width: 120px; height: 120px;
+	top: -55px; left: auto; right: 15px;
+}
+
+.x2 {
+	left: 200px;
+	
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+	opacity: 0.6; 
+	-webkit-animation: moveclouds 25s linear infinite;
+	-moz-animation: moveclouds 25s linear infinite;
+	-o-animation: moveclouds 25s linear infinite;
+}
+
+.x3 {
+	left: -250px; top: -200px;
+	
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0.8; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 20s linear infinite;
+	-moz-animation: moveclouds 20s linear infinite;
+	-o-animation: moveclouds 20s linear infinite;
+}
+
+.x4 {
+	left: 470px; top: -250px;
+	
+	-webkit-transform: scale(0.75);
+	-moz-transform: scale(0.75);
+	transform: scale(0.75);
+	opacity: 0.75; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 18s linear infinite;
+	-moz-animation: moveclouds 18s linear infinite;
+	-o-animation: moveclouds 18s linear infinite;
+}
+
+.x5 {
+	left: -150px; top: -150px;
+	
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0.8; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 20s linear infinite;
+	-moz-animation: moveclouds 20s linear infinite;
+	-o-animation: moveclouds 20s linear infinite;
+}
+
+@-webkit-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+@-moz-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+@-o-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
