@@ -77,11 +77,13 @@ button {
 button#prev {
     left: 10px;
     position: absolute;
+    border: 2px solid #75b3cb;
 }
 
 button#next {
     right: 10px;
     position: absolute;
+    border: 2px solid #75b3cb;
 }
 
 button:disabled {
