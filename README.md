@@ -93,7 +93,7 @@ ya con los datos obtenidos y mapeados en la clase de [products.js](<Prueba de Gr
 
 
 ```math
-Puntaje total = \frac{\`$ Sumatoria de puntajes\`$ }{\`$ Cantidad de puntajes por producto\`$ }
+Puntaje total = \frac{<span>Sumatoria&nbsp;de puntajes</span>}{<span>Cantidad de puntajes por producto</span>}
 ```
 
 Ya con el puntaje se realiza el calculo del conteo del número de estrellas:
