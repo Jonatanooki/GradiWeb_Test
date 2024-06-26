@@ -99,7 +99,7 @@ ya con los datos obtenidos y mapeados en la clase de [products.js](<Prueba de Gr
 Ya con el puntaje se realiza el calculo del conteo del número de estrellas:
 
 ```math
-\text{No de estrellas} = \frac\text{Puntaje total}{100}
+\text{No de estrellas} = \frac{\text{Puntaje total}}{100}
 ```
 
 En caso de que el puntaje llegase a superar los 500 puntos (como no tengo un muestreo de datos que indique que hayan datos mayores a 500) se asegura de que si el **"# de estrellas"** es mayor a 5 deje como máximo 5 estrellas.
