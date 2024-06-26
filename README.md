@@ -119,7 +119,7 @@ Para los estilos no use SASS debido que no se como usarlo, asi que utilicé sola
   <img alt="Diseño Web Responsive" src="Prueba de GradiWeb/images/Overview.png">
 </p>
 
-En cuanto al comprtamiento responsive se tomaron en cuenta los siguientes tamaños de pantalla:
+En cuanto al comportamiento responsive se tomaron en cuenta los siguientes tamaños de pantalla:
 
 ```
     @media (max-width: 1200px)
@@ -128,10 +128,12 @@ En cuanto al comprtamiento responsive se tomaron en cuenta los siguientes tamañ
     @media (min-width: 300px) and (max-width: 768px)        
 ```
 
+Parte superior a 375 pixeles X 667 pixeles
 <p align="center">
   <img alt="Diseño Web Responsive" src="Prueba de GradiWeb/images/Responsive_superior.png">
 </p>
 
+Parte inferior a 375 pixeles X 667 pixeles
 <p align="center">
   <img alt="Diseño Web Responsive" src="Prueba de GradiWeb/images/Responsive_inferior.png">
 </p>
